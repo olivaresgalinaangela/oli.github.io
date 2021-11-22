@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.Encabezado {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #000000;
+    text-decoration: none;
+}
+.Encabezado {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #000000;
+    text-decoration: none;
+    border: 14px solid #000000;
+}

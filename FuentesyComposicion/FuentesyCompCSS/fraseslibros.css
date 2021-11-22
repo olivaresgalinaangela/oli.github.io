@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding: 0;
+}
+header{
+	background-color:#430066;
+	text-align: center;
+	font-size: 38px;
+	font: bolder;
+	color:#E2ABFD;
+	padding: 20px;
+}
+footer{
+	background-color: #430066;
+	text-align: center;
+	font-size: 15px;
+	color:#E2ABFD;
+	padding: 15px;
+}
+nav {
+	background-color: #66A7FF;
+	text-align: center;
+	font-size: 15px;
+	font:normal;
+	padding: 15px;
+}
+h2 {
+	text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	font:normal;
+	color:#430066;
+}
+img {
+	padding: 10px;
+	display: block;
+	margin:auto;
+}
+h4{
+	text-align: center;
+	font-size: 15px;
+	color: #47002E;
+	padding: 5px;
+}
+p {
+	text-align: center;
+	font-size:20px;
+	color:#00354F;
+}
+section{
+	background-color: #9F9BF3;
+	margin: 30px;
+	padding: 20px;
+	border:dashed medium #430066;
+}
+main {
+	background-color: #002A3E;
+	margin: 0 auto;
+	height: auto;
+	padding: 20px;
+}
+header,footer{
+	height: 70px;
+	padding:10px;
+}
+.Encabezado {
+    font-family: alice;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    border: medium double #9F9BF3;
+}
+.Secciones {
+    font-family: alice;
+    font-style: normal;
+    font-weight: 400;
+    color: #00255E;
+    text-decoration: none;
+    border: thin dotted #430066;
+}

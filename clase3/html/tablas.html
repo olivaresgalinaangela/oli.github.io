@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tablas en html</title>
+ <style>
+  *{
+	margin:0;
+	padding:0;  
+    }
+	 h1 {
+		color:#5c5489;
+		font-size: 48px;  
+   }
+   h2{
+	   color:#603;
+	   font-size:36px; 
+   }
+ 	body {
+		background-color:#fabc28;
+		color: #309;
+	}
+	header,footer, main, nav{
+		margin:0 auto;
+		widht:1024px;	
+		color:#96F;
+	}
+  
+   header {
+	   
+	   color:#C00;
+	   text-align:center;
+	
+   }
+   nav {
+	   height:10px;
+	   padding:20px;
+	   color:#CC0;
+	   background-color:#151723;
+   }
+   section {
+	background-color: #FFC1FF;
+	margin: 30px;
+	padding: 30px;
+	color: #660033;
+   }
+   footer {
+	   
+		height:20px;
+		bacground-color:#C90;
+		text-align:center;  
+		padding:20px; 
+   }
+   table {
+	border-collapse:collapse;
+	   
+   }
+   th,td {
+	padding:10px;  
+   }
+  th{
+	text-align:left;
+	color:#E2D55D0;
+	  
+  }
+  td{
+	 
+  }
+  #t01 {
+	background-color:#FC6;  
+	border:double 4px #F03;
+  }
+  
+  
+  
+  
+  #t02 th,#t02 td{
+	padding: 15px;  
+	text-align: left;
+  }
+  
+  #t02 th {
+	background-color:#63F;  
+  }
+  #t02 tr:nth-child(even){
+	  background-color:#F33;
+	  
+	  }
+	  
+	 #t02 tr:nth-child(odd) {
+		background-color:#0C0; 
+	 }
+	 .tabla th{
+		background-color:#C96; 
+	 }
+	 .tabla td{
+		 background-color:#CF6;
+	 }
+	 tr:hover{
+	 	background-color:#FC0;
+	 }
+ </style>
+</head>
+
+<body>
+	<header> 
+    	<h1>Tablas en HTML</h1>
+    </header>
+    <nav> </nav>
+    <main>
+   		<section> 
+           <table id="t02" border="1">
+        	<h2>Tabla simple</h2>
+           
+            <thead>
+            	<tr>
+                	<th>Nombre </th>
+                    <th>E-mail </th>
+                    <th>Teléfono </th>
+                </tr>
+            </thead>
+            <tbody>
+           		<tr> 
+                	<td>Daniel Vásquez </td>
+                    <td>danii32@gmail.com </td>
+                    <td>2225567341 </td>
+                </tr> 
+                <tr> 
+                	<td>Maria Sanchez </td>
+                    <td>mary12@gmail.com </td>
+                    <td>2223556731 </td>
+                </tr> 
+                <tr> 
+                	<td>Juan Puerto</td>
+                    <td>JPpuerto@gmail.com </td>
+                    <td>2227556755 </td>
+                </tr> 
+                <tr> 
+                	<td>Andrea Mendes </td>
+                    <td>andiim14@gmail.com </td>
+                    <td>2227576731 </td>
+                </tr> 
+                <tr> 
+                	<td>Rodolfo Castro </td>
+                    <td>rod43C@gmail.com </td>
+                    <td>2223676751 </td>
+                </tr> 
+            </tbody>
+            <tfoot> </tfoot>
+            </table>
+        </section> 
+        
+        <section> 
+       	  <h2>Tabla con celda de dos columnas</h2>
+              <table class="tabla" border="1">
+            	<thead> 
+                	<tr> 
+                    	<th>Nombre </th>
+                    	<th colspan="2">Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr> 
+                    <td>Gorge López </td>
+                    <td>222 2345678 </td>
+                     <td>222467898 </td>
+                    </tr>
+                    
+                     <tr> 
+                    <td>Marco Pérez </td>
+                    <td>222 2467856457 </td>
+                     <td>2234989766 </td>
+                    </tr>
+                    
+                     <tr> 
+                    <td>Flor Ivañes </td>
+                    <td>555 4565581 </td>
+                     <td>5557889955 </td>
+                    </tr>
+                </tbody>
+                <tfoot> </tfoot>
+            </table>
+        </section>
+        <section>	
+        <h2>Tabla modificada a partir de reglas de identidad en css</h2>
+        <table width="600" border="1" id="t01">
+        <thead>
+  <tr>
+    <th scope="col">Nombre;</th>
+    <th scope="col">Apellidos;</th>
+    <th scope="col">Edad;</th>
+  </tr>
+  		</thead>
+        <tbody>
+        
+        
+  <tr>
+    <td>Maria</td>
+    <td>Flores</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>Stefania</td>
+    <td>Gomez</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>Karla</td>
+    <td>Baez</td>
+    <td>14</td>
+  </tr>
+  </tbody>
+</table>
+
+        </section>
+   <section>      
+        <h2>Tabla modificada a partir de reglas de identidad en css</h2>
+        <table class="tabla" width="600" border="1" id="t01">
+        <thead>
+  <tr>
+    <th scope="col">Nombre;</th>
+    <th scope="col">Apellidos;</th>
+    <th scope="col">Edad;</th>
+  </tr>
+  		</thead>
+        <tbody>
+        
+        
+  <tr>
+    <td>Maria</td>
+    <td>Flores</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>Stefania</td>
+    <td>Gomez</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>Karla</td>
+    <td>Baez</td>
+    <td>14</td>
+  </tr>
+  </tbody>
+</table>
+        </section>
+       <section>
+         <table class="tabla" id="tablaux" width="500" border="1">
+         <thead>
+         	<tr> </tr>
+          </thead>
+         <tbody>
+         
+  <tr>
+    <th>Nombre</th>
+    <th>Edad</th>
+    <th>Género</th>
+    <th>Deporte</th>
+  </tr>
+  <tr>
+    <td>María López</td>
+    <td>15</td>
+    <td>Femenino</td>
+    <td>Football</td>
+  </tr>
+  <tr>
+    <td>Fernando Flores</td>
+    <td>12</td>
+    <td>Masculino</td>
+    <td>Football</td>
+  </tr>
+  <tr>
+    <td>Oswaldo Ruíz</td>
+    <td>16</td>
+    <td>Masculino</td>
+    <td>Volleyball</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  </tfoot>
+</table>
+
+       </section>
+    </main>
+    <footer>
+    	<h5>Elaborado por Angela Olivares Galina </h5>
+     </footer>
+</body>
+</html>
